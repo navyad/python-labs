@@ -1,0 +1,7 @@
+2016-06-19 13:58:33,189 - example_logger - ERROR - There was an exception in  poi
+Traceback (most recent call last):
+  File "error_log.py", line 28, in wrapper
+    return function(*args, **kwargs)
+  File "<ipython-input-12-0cf262e59c8f>", line 3, in poi
+    1/0
+ZeroDivisionError: integer division or modulo by zero
