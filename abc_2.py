@@ -18,4 +18,5 @@ class DjangoModel(DoubleBaseModel):
 
 
 if __name__ == '__main__':
+    django = DjangoModel()
     print(django.to_dict(123))
