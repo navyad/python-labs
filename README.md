@@ -1,2 +1,2 @@
 # python-labs
-Random (read as useful) stuff from python.
+Getting my hands dirty on intesting stuff.
