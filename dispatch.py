@@ -11,6 +11,7 @@ For example, code may wish to accept either an object of some type, or a sequenc
 Currently, the "obvious way" to do this is by type inspection, but this is brittle and closed to extension.
 """
 
+
 from functools import singledispatch
 
 # ................... generic function
@@ -24,7 +25,7 @@ def fun(arg, verbose=False):
 @fun.register(int)
 def fun_int(arg, verbose=False):
     if verbose:
-        print("numbers: ", end=" ")
+        print("numbers: ")
     print(arg)
 
 @fun.register(list)
