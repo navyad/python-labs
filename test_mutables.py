@@ -6,7 +6,6 @@ Immutables data types:
     tuple
     frozen set
 """
-
 # test1
 name = "python"
 def test_str(_str):
