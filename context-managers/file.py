@@ -56,7 +56,7 @@ class ManagerSuppressException(AbstractContextManager):
         print("call_me")
 
 
-with ManagerSurpressException() as obj:
+with ManagerSuppressException() as obj:
     obj.call_me()
     print("after call")
 
