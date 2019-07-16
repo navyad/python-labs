@@ -5,7 +5,7 @@ class Person(object):
     def fget(self):
         print "Getting: %s" % self._name
         return self._name
-    
+
     def fset(self, value):
         print "Setting: %s" % value
         self._name = value.title()
@@ -21,4 +21,24 @@ person = Person()
 person.name = "navyad"
 person.name
 del person.name
-person.name
+#person.name
+
+
+
+class Cricket:
+    def __init__(self):
+        self._team = "India"
+
+    @property
+    def team(self):
+        return self._team
+
+
+obj = Cricket()
+print obj.team
+print "ccc", obj._team
+obj.team = "England"
+print obj.team
+# following will not work
+obj._team = "Aus"
+print obj.team
