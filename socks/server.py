@@ -10,4 +10,4 @@ print(f"server running at {HOST_PORT}")
 while True:
     client_soc, addr = socket_obj.accept()
     print(f"client: {addr}")
-    client_soc.send(b"server: says hell0")
+    client_soc.send(b"hell0 from server")
