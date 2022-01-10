@@ -3,9 +3,10 @@ import socket
 SERVER_HOST_PORT = ("127.0.0.1", 1234)
 
 socket_obj = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+print("connected with server....")
 socket_obj.connect(SERVER_HOST_PORT)
-#data = socket_obj.recv(1024)
 
 while True:
-    data = socket_obj.recv(10)
-    print(f"got data from server: {data}")
+    socket_obj.send(b"hi from client")
+    server_message = socket_obj.recv(10)
+    print(f"{server_message}")

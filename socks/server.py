@@ -9,5 +9,6 @@ print(f"server running at {HOST_PORT}")
 
 while True:
     client_soc, addr = socket_obj.accept()
-    print(f"client: {addr}")
-    client_soc.send(b"hell0 from server")
+    msg = client_soc.recv(1024).decode()
+    print(msg)
+    client_soc.send(b"from server")
